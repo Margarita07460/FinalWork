@@ -13,7 +13,7 @@
 int main()
 {
     int i;
-    int maxd = 0;
+    int max = 0;
     int mas[20];
     int* pmas;
 
@@ -33,7 +33,7 @@ int main()
     {
         if (*(pmas + i) % 2 != 0)
         {
-            maxd = *(pmas + i);
+            max = *(pmas + i);
             break;
         }
     }
