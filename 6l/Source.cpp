@@ -13,7 +13,7 @@
 int main()
 {
     int i;
-    int max = 0;
+    int max1 = 0;
     int mas[20];
     int* pmas;
 
@@ -33,20 +33,20 @@ int main()
     {
         if (*(pmas + i) % 2 != 0)
         {
-            max = *(pmas + i);
+            max1 = *(pmas + i);
             break;
         }
     }
 
     for (int i = 0; i < 20; i++)                //поиск максимального
     {                                           //нечетного элемента
-        if (*(pmas + i) > max && *(pmas + i) % 2 != 0)
+        if (*(pmas + i) > max1 && *(pmas + i) % 2 != 0)
         {
-            max = *(pmas + i);
+            max1 = *(pmas + i);
         }
     }
-    if (max != 0) {
-        printf("Максимальное нечетное число: %d\n", max);
+    if (max1 != 0) {
+        printf("Максимальное нечетное число: %d\n", max1);
     }
     else {
         printf("Все числа четные");
